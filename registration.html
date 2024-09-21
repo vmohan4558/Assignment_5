@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Missing Children</title>
+    <!-- Link to the main external CSS file -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Link to the registration-specific CSS file -->
+    <link rel="stylesheet" href="./assets/css/style-r.css">
+</head>
+<body>
+    <header>
+        <h1>Light Their Way Home: Help for Missing Children</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <fieldset>
+                <legend>Register</legend>
+                <form id="registrationForm" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Choose a strong password" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Street, City, Country" required>
+
+                    <label for="profilePic">Upload Profile Picture:</label>
+                    <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </fieldset>
+            <p>Already have an account? <a href="./login.html">Login here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: <a href="mailto:info@missingchildren.org">info@missingchildren.org</a></p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
